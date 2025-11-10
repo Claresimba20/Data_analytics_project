@@ -11,7 +11,7 @@ Examples:
 1. Health Expenditure (per capita / % GDP):Represents the input or determinant — how much a country invests in health systems. It influences outcomes but is not itself a result.
 2. Measles Immunization Rate:Measures health service coverage (preventive measure), showing access and performance of immunization programs.
 3. Birth rate:Represents a demographic measure — number of births per 1,000 population. It affects planning but not a direct health outcome.
-4. Population:Represents a demographic measure — number of births per 1,000 population. It affects planning but not a direct health outcome.
+4. Population Growth rate:Represents a demographic measure — number of births per 1,000 population. It affects planning but not a direct health outcome.
 5. Births attended by skilled  staff:Reflects health service delivery and access to skilled maternal care — an indicator of healthcare quality.
 6. Antenatal Care  Coverage:Represents health service utilization (the proportion of pregnant women receiving prenatal care) — an input for improved maternal outcomes.
 ### Health Outcome
@@ -22,18 +22,45 @@ Examples:
 3. Under 5 mortality:Indicates child survival and reflects the outcome of child health interventions, nutrition, and access to healthcare.
 4. HIV Prevalednce:Reflects the actual health status of the population — the percentage of people living with HIV.
 
+## Classification of the indicators
+### Health outcomes
+1. Life expectancy
+2. Under 5 mortality
+3. Maternal mortality
+4. HIV prevalence
+### Health System Indicators
+1. Health expenditure per capita
+2. Measles immunization rate
+3. Antenatal Care Coverage
+4. Births attended by skilled staff
+### Demographic indicators
+1. Population Growth Rate
+2. Total population
+3. Birth rate
+### Socioeconomic indicators
+1. GDP per capita
+2. Urban population percentage
+3. Adult literacy rate
+
 ## Problem Statement
 Despite improvements in healthcare access and outcomes across Sub-Saharan Africa, data gaps and limited integration of health statistics hinder evidence-based decision-making.
 Policymakers and researchers often struggle to integrate data from multiple sources to uncover relationships between factors like health expenditure, immunization coverage, and child mortality.
-This project addresses the problem by developing a data-driven framework that integrates health data from multiple open APIs, cleans and analyzes the datasets, and visualizes patterns to provide actionable insights
-on health progress and disparities across the region.
+This project addresses the problem by developing a data-driven framework that integrates health data from multiple open APIs, cleans and analyzes the datasets, and visualizes patterns to provide actionable insights on health progress and disparities across the region.
 
-## Area of study-why Sub-Saharan Africa?
-Sub-Saharan Africa (SSA) was chosen because:
-- It bears a disproportionate burden of global disease and mortality.
-- Countries share similar socioeconomic and health system challenges, allowing for comparative analysis.
-- SSA is often treated as a distinct region in global health reporting, making it an ideal case study for health disparities and SDG 3 (Good Health and Well-being).
-  
+## Area of study
+## One continent,two realities: Why Sub-Saharan Africa Deserves Focused Analysis
+Africa is home to 1.4 billion people spread across 54 countries, but the continent is far from uniform.
+There are stark differences in economic development, healthcare systems, and disease burden between the Northern, Southern, Eastern, and Western regions.
+While North Africa has relatively advanced healthcare infrastructure, higher GDP, and lower disease burden, Sub-Saharan Africa (SSA) continues to face disproportionate health challenges.
+Sub-Saharan Africa accounts for over 65% of global maternal deaths, more than 50% of HIV infections, and the world’s highest under-5 mortality rate.
+These contrasts make it vital to study SSA as a distinct region rather than blending it into a continental average that hides inequalities.
+## Analytical Justification — Why SSA Needs Its Own Focus
+1. Health Inequalities:Averaging health data for all of Africa conceals regional disparities. For example, North Africa’s life expectancy exceeds 70 years, while several SSA nations are below 60.
+2. Policy relevance:Most international health programs (WHO, UNICEF, Global Fund) treat SSA as a unique operational region because it faces similar socioeconomic and epidemiological realities.
+3. Development gaps:SSA countries share lower income levels, weaker healthcare systems, and higher dependency on external aid — making comparative analysis across SSA more meaningful.
+4. Data Consistency:Many global health datasets (e.g., World Bank’s “region=SSF”) are structured specifically for SSA, allowing cleaner, more consistent API retrieval and analysis.
+5. Research Impact:By isolating SSA, we can develop targeted insights and recommendations that directly address the needs of the region — instead of generalizing across an entire continent.
+
 ## Objectives
 ### Main Objective
 To explore and analyze key health indicators and outcomes across Sub-Saharan Africa using open-source APIs and data visualization tools.
@@ -46,11 +73,26 @@ To explore and analyze key health indicators and outcomes across Sub-Saharan Afr
 5. To generate insights that can inform public health planning, policy decisions, and progress tracking toward SDG 3 (Good Health and Well-being).
 
 ## Research Questions
-1. What are the key trends in life expectancy, maternal mortality, and child mortality in Sub-Saharan Africa over the past decade?
-2. How do health expenditure and immunization rates relate to health outcomes?
-3. Which countries are improving fastest, and which are lagging behind?
-4. What relationships exist between HIV prevalence, health investment, and mortality outcomes?
-5. How can data-driven insights inform regional health policy and planning toward SDG 3?
+### Overall Health Progress (Trend & Ranking)
+1. How have key health outcomes (life expectancy, under-5 mortality, maternal mortality) changed in Sub-Saharan Africa from 1980–2023?
+2. Which countries have achieved the greatest improvements in life expectancy and mortality reduction over time?
+3. Are health improvements evenly distributed across regions (East, West, Central, Southern Africa)?
+### Health Investment vs. Outcomes
+1. Does higher health expenditure per capita correlate with better health outcomes (life expectancy, maternal mortality)?
+2. Are countries investing more in health seeing faster improvements in outcomes over time?
+3. Is there a spending efficiency gap — countries spending the same amount but achieving different results?
+### Maternal and Child Health
+1. What is the relationship between births attended by skilled staff and maternal mortality rates?
+2. Do countries with higher antenatal care coverage have lower under-5 mortality?
+3. How has immunization (e.g., measles coverage) impacted child survival rates across SSA?
+### Disease Burden (HIV Focus)
+1. How has HIV prevalence evolved across SSA countries since 1990?
+2. What is the relationship between HIV prevalence and life expectancy?
+3. Which countries have successfully reduced HIV prevalence the most?
+### Socioeconomic Context
+1. How does GDP per capita relate to health expenditure and life expectancy?
+2. Do more urbanized countries show better health outcomes?
+3. How does literacy rate correlate with maternal and child mortality?
 
 ## Stakeholders and  Beneficiaries
 1. Public Health Policymakers and Government Agencies:Identify gaps and target interventions efficiently.
