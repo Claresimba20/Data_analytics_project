@@ -41,6 +41,10 @@ Examples:
 1. GDP per capita
 2. Urban population percentage
 3. Adult literacy rate
+### Disease Burden
+1. HIV prevalence
+2. TB prevalence
+3. Malaria prevalence
 
 ## Problem Statement
 Despite improvements in healthcare access and outcomes across Sub-Saharan Africa, data gaps and limited integration of health statistics hinder evidence-based decision-making.
@@ -48,7 +52,15 @@ Policymakers and researchers often struggle to integrate data from multiple sour
 This project addresses the problem by developing a data-driven framework that integrates health data from multiple open APIs, cleans and analyzes the datasets, and visualizes patterns to provide actionable insights on health progress and disparities across the region.
 
 ## Area of study
-## One continent,two realities: Why Sub-Saharan Africa Deserves Focused Analysis
+## One continent,two realities 
+<img width="950" height="937" alt="image" src="https://github.com/user-attachments/assets/2b50dfbb-586f-4531-80dc-82a97dda1ee3" /> 
+
+Africa is the most diverse continent, and aggregated data obscures massive regional disparities, particularly in health outcomes. 
+This project focuses exclusively on Sub-Saharan Africa (SSA) because it faces a disproportionate global burden of disease, requires distinct policy interventions, and shares a unique set of socioeconomic and epidemiological realities that are fundamentally different from those in North Africa. Using continental-level averages would mask the profound health inequalities that exist.
+## The Stark Disparity in Health Outcomes
+<img width="852" height="550" alt="image" src="https://github.com/user-attachments/assets/8dad1839-6561-4bda-baea-3ccb15f48f82" />
+
+## Why Sub-Saharan Africa Deserves Focused Analysis
 Africa is home to 1.4 billion people spread across 54 countries, but the continent is far from uniform.
 There are stark differences in economic development, healthcare systems, and disease burden between the Northern, Southern, Eastern, and Western regions.
 While North Africa has relatively advanced healthcare infrastructure, higher GDP, and lower disease burden, Sub-Saharan Africa (SSA) continues to face disproportionate health challenges.
