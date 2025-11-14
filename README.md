@@ -196,6 +196,12 @@ Designing dashboards to visualize:
 2. Indicator definitions may vary slightly between WHO and World Bank.
 3. API access depends on internet stability and endpoint availability.
 
+## Results
+https://public.tableau.com/app/profile/clare.simba/viz/D1HealthTrendsRanking/D1HeathtrendsRanking?publish=yes
+https://public.tableau.com/app/profile/clare.simba/viz/D2HIVSocioeconomiccontext/D2HIVSocioeconomiccontext?publish=yes
+https://public.tableau.com/app/profile/clare.simba/viz/D3MaternalChildHealth/D3MCH?publish=yes
+https://public.tableau.com/app/profile/clare.simba/viz/D4HealthInvestmentvsOutcome/HealthInvestmentvsOutcome?publish=yes
+
 ## Expected Outcomes
 1. A cleaned, unified dataset combining WHO and World Bank indicators.
 2. Interactive Tableau dashboards illustrating key trends in SSA health.
