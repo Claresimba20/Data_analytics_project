@@ -2,18 +2,17 @@
 ## Introduction
 Health outcomes in Sub-Saharan Africa remain a critical area of concern due to persistent disparities in access, quality, and financing of healthcare services.
 Despite global efforts to improve health systems, the region still faces high maternal and child mortality, low life expectancy, and limited healthcare infrastructure.
-Analyzing key health indicators — such as life expectancy, health expenditure, immunization coverage, and mortality rates — provides vital insights into progress and challenges.
+Analyzing key health indicators — such as life expectancy, health expenditure, GDP per Capita and mortality rates — provides vital insights into progress and challenges.
 This project leverages open data from the World Health Organization (WHO) and the World Bank (WB) APIs to integrate, clean, and analyze health indicators across Sub-Saharan Africa using Python, Google BigQuery, and Tableau.
 ## Concept clarification
 ### Health indicator
 A health indicator is a measurable variable used to describe and monitor specific aspects of a population’s health status or determinants of health.
 Examples:
 1. Health Expenditure (per capita / % GDP):Represents the input or determinant — how much a country invests in health systems. It influences outcomes but is not itself a result.
-2. Measles Immunization Rate:Measures health service coverage (preventive measure), showing access and performance of immunization programs.
-3. Birth rate:Represents a demographic measure — number of births per 1,000 population. It affects planning but not a direct health outcome.
-4. Population Growth rate:Represents a demographic measure — number of births per 1,000 population. It affects planning but not a direct health outcome.
-5. Births attended by skilled  staff:Reflects health service delivery and access to skilled maternal care — an indicator of healthcare quality.
-6. Antenatal Care  Coverage:Represents health service utilization (the proportion of pregnant women receiving prenatal care) — an input for improved maternal outcomes.
+2. Birth rate:Represents a demographic measure — number of births per 1,000 population. It affects planning but not a direct health outcome.
+3. Population Growth rate:Represents a demographic measure — number of births per 1,000 population. It affects planning but not a direct health outcome.
+4. Births attended by skilled  staff:Reflects health service delivery and access to skilled maternal care — an indicator of healthcare quality.
+5. Antenatal Care  Coverage:Represents health service utilization (the proportion of pregnant women receiving prenatal care) — an input for improved maternal outcomes.
 ### Health Outcome
 Reflects the actual results of health interventions or the state of health of a population — the end results of healthcare policies, services, or behaviors.
 Examples:
@@ -30,9 +29,8 @@ Examples:
 4. HIV prevalence
 ### Health System Indicators
 1. Health expenditure per capita
-2. Measles immunization rate
-3. Antenatal Care Coverage
-4. Births attended by skilled staff
+2. Antenatal Care Coverage
+3. Births attended by skilled staff
 ### Demographic indicators
 1. Population Growth Rate
 2. Total population
@@ -41,10 +39,6 @@ Examples:
 1. GDP per capita
 2. Urban population percentage
 3. Adult literacy rate
-### Disease Burden
-1. HIV prevalence
-2. TB prevalence
-3. Malaria prevalence
 
 ## Problem Statement
 Despite improvements in healthcare access and outcomes across Sub-Saharan Africa, data gaps and limited integration of health statistics hinder evidence-based decision-making.
@@ -52,59 +46,34 @@ Policymakers and researchers often struggle to integrate data from multiple sour
 This project addresses the problem by developing a data-driven framework that integrates health data from multiple open APIs, cleans and analyzes the datasets, and visualizes patterns to provide actionable insights on health progress and disparities across the region.
 
 ## Area of study
+<img width="1024" height="1050" alt="image" src="https://github.com/user-attachments/assets/1b47be98-6e44-4736-970e-13123cd1dba6" />
+
+Sub-Saharan Africa, which excludes the North African countries, is the part of Africa that lies below the vast Sahara Desert — a region consisting of 48 countries, home to over a billion people, and rich in cultural heritage and natural resources.
+Despite its potential, SSA has historically experienced slower economic growth, higher poverty levels, and weaker health outcomes compared to North Africa and the global average.
+
 ## One continent,two realities 
-<img width="950" height="937" alt="image" src="https://github.com/user-attachments/assets/2b50dfbb-586f-4531-80dc-82a97dda1ee3" /> 
+## Why Sub-Saharan Africa Deserves Focussed Analysis
+<img width="859" height="547" alt="image" src="https://github.com/user-attachments/assets/08330317-75d0-4829-9908-284149daf856" />
+<img width="841" height="547" alt="image" src="https://github.com/user-attachments/assets/ef5ec016-c74c-438b-9869-dc676aca4ca4" />
 
 Africa is the most diverse continent, and aggregated data obscures massive regional disparities, particularly in health outcomes. 
-This project focuses exclusively on Sub-Saharan Africa (SSA) because it faces a disproportionate global burden of disease, requires distinct policy interventions, and shares a unique set of socioeconomic and epidemiological realities that are fundamentally different from those in North Africa. Using continental-level averages would mask the profound health inequalities that exist.
-## The Stark Disparity in Health Outcomes
-<img width="852" height="550" alt="image" src="https://github.com/user-attachments/assets/8dad1839-6561-4bda-baea-3ccb15f48f82" />
-
-## Why Sub-Saharan Africa Deserves Focused Analysis
-Africa is home to 1.4 billion people spread across 54 countries, but the continent is far from uniform.
-There are stark differences in economic development, healthcare systems, and disease burden between the Northern, Southern, Eastern, and Western regions.
-While North Africa has relatively advanced healthcare infrastructure, higher GDP, and lower disease burden, Sub-Saharan Africa (SSA) continues to face disproportionate health challenges.
-Sub-Saharan Africa accounts for over 65% of global maternal deaths, more than 50% of HIV infections, and the world’s highest under-5 mortality rate.
-These contrasts make it vital to study SSA as a distinct region rather than blending it into a continental average that hides inequalities.
-## Analytical Justification — Why SSA Needs Its Own Focus
-1. Health Inequalities:Averaging health data for all of Africa conceals regional disparities. For example, North Africa’s life expectancy exceeds 70 years, while several SSA nations are below 60.
-2. Policy relevance:Most international health programs (WHO, UNICEF, Global Fund) treat SSA as a unique operational region because it faces similar socioeconomic and epidemiological realities.
-3. Development gaps:SSA countries share lower income levels, weaker healthcare systems, and higher dependency on external aid — making comparative analysis across SSA more meaningful.
-4. Data Consistency:Many global health datasets (e.g., World Bank’s “region=SSF”) are structured specifically for SSA, allowing cleaner, more consistent API retrieval and analysis.
-5. Research Impact:By isolating SSA, we can develop targeted insights and recommendations that directly address the needs of the region — instead of generalizing across an entire continent.
-
-## Objectives
-### Main Objective
-To explore and analyze key health indicators and outcomes across Sub-Saharan Africa using open-source APIs and data visualization tools.
-
-### Specific Objectives
-1. To collect and integrate health-related datasets from multiple open APIs such as the World Bank and World Health Organization (WHO).
-2. To clean, transform, and merge these datasets into a unified analytical format suitable for exploration.
-3. To analyze regional trends in core health indicators like life expectancy, child mortality, maternal mortality, and health expenditure.
-4. To visualize health trends and disparities across countries using interactive dashboards in Tableau.
-5. To generate insights that can inform public health planning, policy decisions, and progress tracking toward SDG 3 (Good Health and Well-being).
+This study focuses specifically on Sub-Saharan Africa (SSA) rather than the African continent as a whole in order to produce a more accurate and meaningful analysis.
+Africa is highly diverse, and combining all regions—particularly North Africa, which has significantly higher GDP per capita, stronger economic growth, and better health indicators—creates averages that do not reflect the realities experienced in SSA.
+Including wealthier North African countries would artificially inflate the continental averages and mask the structural economic and health disparities that characterize most SSA countries.
+By isolating SSA, the analysis concentrates on a more homogeneous region with similar socio-economic challenges, enabling clearer identification of trends, more valid comparisons, and more policy-relevant insights.
 
 ## Research Questions
-### Overall Health Progress (Trend & Ranking)
-1. How have key health outcomes (life expectancy, under-5 mortality, maternal mortality) changed in Sub-Saharan Africa from 1980–2023?
-2. Which countries have achieved the greatest improvements in life expectancy and mortality reduction over time?
-3. Are health improvements evenly distributed across regions (East, West, Central, Southern Africa)?
-### Health Investment vs. Outcomes
-1. Does higher health expenditure per capita correlate with better health outcomes (life expectancy, maternal mortality)?
-2. Are countries investing more in health seeing faster improvements in outcomes over time?
-3. Is there a spending efficiency gap — countries spending the same amount but achieving different results?
-### Maternal and Child Health
-1. What is the relationship between births attended by skilled staff and maternal mortality rates?
-2. Do countries with higher antenatal care coverage have lower under-5 mortality?
-3. How has immunization (e.g., measles coverage) impacted child survival rates across SSA?
-### Disease Burden (HIV Focus)
-1. How has HIV prevalence evolved across SSA countries since 1990?
-2. What is the relationship between HIV prevalence and life expectancy?
-3. Which countries have successfully reduced HIV prevalence the most?
-### Socioeconomic Context
-1. How does GDP per capita relate to health expenditure and life expectancy?
-2. Do more urbanized countries show better health outcomes?
-3. How does literacy rate correlate with maternal and child mortality?
+### Descriptive  Research Questions
+1. What is the overall trend of life expectancy in Sub-Saharan Africa over the years?
+2. Which countries have the highest and lowest life expectancy in SSA?
+3. How does life expectancy vary across countries in a single selected year?
+
+### Diagnostic research questions (Why is it happening)
+4. What is the relationship between life expectancy and under-5 mortality in SSA?
+5. How does health expenditure per capita relate to life expectancy?
+6. Does economic performance (GDP per capita) influence life expectancy?
+7. Which countries are outliers in the relationship between life expectancy and health expenditure?
+8. Are there countries that perform better or worse than expected given their GDP levels?
 
 ## Stakeholders and  Beneficiaries
 1. Public Health Policymakers and Government Agencies:Identify gaps and target interventions efficiently.
@@ -202,10 +171,6 @@ https://public.tableau.com/app/profile/clare.simba/viz/D2HIVSocioeconomiccontext
 https://public.tableau.com/app/profile/clare.simba/viz/D3MaternalChildHealth/D3MCH?publish=yes
 https://public.tableau.com/app/profile/clare.simba/viz/D4HealthInvestmentvsOutcome/HealthInvestmentvsOutcome?publish=yes
 
-## Expected Outcomes
-1. A cleaned, unified dataset combining WHO and World Bank indicators.
-2. Interactive Tableau dashboards illustrating key trends in SSA health.
-3. Data-driven insights to inform health policies and international development goals.
 
 ## Future work
 1. Incorporate more data sources (e.g., UNICEF, Our World in Data).
